@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>WebRTC Data Track Demo</title>
+  </head>
+  <body>
+    <h1>WebRTC Data Track Demo</h1>
+    <p id="message">Connecting...</p>
+    <div>
+      <label for="name">Name:</label>
+      <input id="name">
+      <button id="ping">Ping!</button>
+    </div>
+    <ul id="pings"></ul>
+    <script src="https://media.twiliocdn.com/sdk/js/video/releases/2.3.0/twilio-video.min.js"></script>
+    <script src="{{ url_for('static', filename='ping.js') }}"></script>
+  </body>
+</html>
